@@ -15,6 +15,7 @@ int main() {
         break;
     default:
         std::cout << "theres no need numbers!";
+        break;
     }
 
     return 0;
