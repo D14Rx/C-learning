@@ -1,0 +1,37 @@
+#include <iostrem>
+#include <vectors>
+using namespace std;
+
+int main() {
+
+    vector<int> v1 = {10, 20, 30, 40, 50};
+    v1.pushback(60); // {10, 20, 30, 40, 50, 60}
+    v1.pushback(70); // {10, 20, 30, 40, 50, 60, 70}
+    v1.pop_back(); //= (v1 massive - 70)   ->    {10, 20, 30, 40, 50, 60}
+    v1.shrink_to_fit(); // clearing extra memory for elements.
+
+    cout << v1[0] << endl;  //= 10.
+    cout << v1.size() << endl;  //= 6.
+    cout << v1.front() << endl; //= 10.
+    cout << v1.back() << endl; //= 60.
+    cout << v1.capacity() << endl; //= 7 (used memory for elements)
+
+    //AFTER v1.shrink_to_fit()...
+
+    cout << v1.capacity() << endl; //= 6 
+} 
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <vectors>
+#include <algorithms>
+
+int man() {
