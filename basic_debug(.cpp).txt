@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int x = 10;  // pretend this variable is important
+
+void dbg() { cout << "x = " << x << endl; }
+
+int main() {
+	dbg();  // x = 10
+	x = 5000;
+	dbg();  // x = 5000
+}
